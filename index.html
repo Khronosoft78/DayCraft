@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DayCraft – Organisez votre quotidien</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+            background: #f4f6fb;
+            color: #222;
+        }
+
+        /* ── Header / Hero ── */
+        header {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            color: #fff;
+            text-align: center;
+            padding: 80px 20px 60px;
+        }
+
+        header .logo {
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin-bottom: 12px;
+        }
+
+        header .logo span {
+            color: #c7d2fe;
+        }
+
+        header .tagline {
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: #e0e7ff;
+            margin-bottom: 36px;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background: #fff;
+            color: #4f46e5;
+            font-weight: 700;
+            padding: 14px 36px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: transform 0.15s, box-shadow 0.15s;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(0,0,0,0.2);
+        }
+
+        /* ── Features ── */
+        .features {
+            max-width: 960px;
+            margin: 60px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 28px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 36px 28px;
+            box-shadow: 0 2px 16px rgba(79, 70, 229, 0.08);
+            text-align: center;
+            transition: transform 0.15s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+        }
+
+        .card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+        }
+
+        .card h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #4f46e5;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* ── About section ── */
+        .about {
+            background: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #4f46e5;
+            margin-bottom: 16px;
+        }
+
+        .about p {
+            max-width: 640px;
+            margin: 0 auto;
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        /* ── Footer ── */
+        footer {
+            background: #1e1b4b;
+            color: #a5b4fc;
+            text-align: center;
+            padding: 32px 20px;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #c7d2fe;
+            text-decoration: underline;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+        footer .separator {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ── Hero ── -->
+    <header>
+        <div class="logo">Day<span>Craft</span></div>
+        <p class="tagline">Planifiez, organisez et maîtrisez votre quotidien</p>
+        <a href="#features" class="btn-primary">Découvrir l'application</a>
+    </header>
+
+    <!-- ── Features ── -->
+    <section class="features" id="features">
+        <div class="card">
+            <div class="icon">📅</div>
+            <h3>Planification quotidienne</h3>
+            <p>Organisez vos journées efficacement grâce à une vue claire de vos tâches et événements.</p>
+        </div>
+        <div class="card">
+            <div class="icon">✅</div>
+            <h3>Gestion des tâches</h3>
+            <p>Créez, priorisez et suivez vos tâches pour ne plus rien oublier.</p>
+        </div>
+        <div class="card">
+            <div class="icon">🔔</div>
+            <h3>Rappels intelligents</h3>
+            <p>Recevez des notifications au bon moment pour rester concentré sur l'essentiel.</p>
+        </div>
+        <div class="card">
+            <div class="icon">📊</div>
+            <h3>Suivi de productivité</h3>
+            <p>Visualisez votre progression et identifiez vos habitudes pour vous améliorer.</p>
+        </div>
+        <div class="card">
+            <div class="icon">🔒</div>
+            <h3>Confidentialité totale</h3>
+            <p>Vos données restent sur votre appareil. Aucune information n'est transmise à des serveurs externes.</p>
+        </div>
+        <div class="card">
+            <div class="icon">📱</div>
+            <h3>Interface intuitive</h3>
+            <p>Une expérience utilisateur fluide et agréable, conçue pour une utilisation quotidienne.</p>
+        </div>
+    </section>
+
+    <!-- ── About ── -->
+    <section class="about">
+        <h2>À propos de DayCraft</h2>
+        <p>
+            DayCraft est une application mobile pensée pour vous aider à organiser votre vie de tous les jours.
+            Que ce soit pour gérer vos tâches professionnelles, suivre vos objectifs personnels ou simplement
+            planifier votre semaine, DayCraft vous accompagne à chaque étape.
+        </p>
+    </section>
+
+    <!-- ── Footer ── -->
+    <footer>
+        <p>
+            © 2026 DayCraft
+            <span class="separator">·</span>
+            <a href="privacy-policy.html">Politique de confidentialité</a>
+            <span class="separator">·</span>
+            <a href="mailto:conraux.christopher@gmail.com">Contact</a>
+        </p>
+    </footer>
+
+</body>
+</html>
